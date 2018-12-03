@@ -7,14 +7,14 @@ DR;
  - Download this repo.
  - Install python 3.7 - https://www.python.org/downloads/release/python-371/
  - In shell. Install virtualenv and make a python environment close to the roomhub folder, and activate it:
-  - pip install virtualenvwrapper-win
-  - mkvirtualenv myproject
-  - workon myproject
+   - pip install virtualenvwrapper-win
+   - mkvirtualenv myproject
+   - workon myproject
  - Install Django
-  - pip install django
+   - pip install django
  - In the folder mysite/:
-  - python manage.py migrate
-  - python manage.py runserver
+   - python manage.py migrate
+   - python manage.py runserver
 
 Same on Linux, macOS. For more info: 
 
