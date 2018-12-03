@@ -16,6 +16,6 @@ DR;
    - python manage.py migrate
    - python manage.py runserver
 
-Same on Linux, macOS. For more info: 
+Same on Linux, macOS.
 
 Done with Pilinszki-Nagy Csongor (@csongorpilinszkinagy)
