@@ -1,0 +1,28 @@
+body {
+	background-image: url("../images/colorful-fabric.jpg");
+}
+
+
+a.card-entire-link {
+	position: absolute;
+	top: 0; left: 0;
+	height: 100%; width: 100%;
+}
+
+.card:hover {
+	 background-color: #eaeaea;
+}
+
+.col-md-3 {
+	padding-bottom: 10px;
+}
+
+main {
+	background-image: linear-gradient(to bottom, #f8f9fa, 60%, #ffffff00);
+	padding-bottom: 400px;
+}
+
+main::after {
+	height: 100px;
+	
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h2>{{ event.title }}</h2>
+<ul>
+    <li>{{ event.description }}</li>
+    <li>Starts: {{ event.start }}</li>
+    <li>Ends: {{ event.end }}</li>
+    <li>Room: {{ event.room }}</li>
+    <li>Public: {{ event.is_public }}</li>
+    <li>Organizer's username: {{ event.organizer_user }}</li>
+</ul>
+{% if user == event.organizer_user %}
+<p>
+    <a href="{% url 'rooms:event_edit' event.id %}">Edit</a> | 
+    <a href="{% url 'rooms:event_delete' event.id %}">Delete</a>
+</p>
+{% endif %}
+
+{% endblock %}

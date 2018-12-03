@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to delete "{{ object }}"?</p> 
+    <p>This will delete all events that are held in this room:</p>
+
+ 	<ul>
+		{% for event in events_in_room %}
+	 		<li>
+	 			{{ event.title }} - {{ event.start }} to {{ event.end }} in {{ event.room }}
+	 		</li>
+ 		{% empty %}
+			No events yet.
+		{% endfor %}
+ 	</ul>
+    
+
+    <input type="submit" value="Confirm">
+</form>
+
+{% endblock %}

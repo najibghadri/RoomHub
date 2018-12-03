@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h2>Hello {{ object.first_name }} {{ object.last_name }}</h2>
+<ul>
+    <li>Username: {{ object.username }}</li>
+    <li>E-mail: {{ object.email }}</li>
+</ul>
+<p>
+    <a href="{% url 'rooms:edit_profile' %}">Edit profile</a>
+</p>
+
+{% endblock %}

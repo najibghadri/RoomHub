@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1>Welcome to RoomHub</h1>
+
+<h2>Sign up</h2>
+<form method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<button type="submit">Go!</button>
+<p></p>
+<h3><a href="{% url 'rooms:login' %}">Or Log In</a></h3>
+
+{% endblock %}

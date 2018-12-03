@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h2>Rooms:</h2>
+<div class="row">
+{% for room in rooms %}
+ 
+    <div class="col-md-3">  
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ room.name }}</h5>
+          <a class="card-link" href="{% url 'rooms:room_edit' room.id %}">Edit name</a>
+          <a class="card-link" href="{% url 'rooms:room_delete' room.id %}">Delete room</a>
+        </div>
+      </div>
+    </div>
+
+{% endfor %}
+    <div class="col-md-3">  
+      <div class="card">
+        <a class="card-entire-link" href="{% url 'rooms:room_create' %}">
+        </a>
+        <div class="card-body">
+          <h1 style="text-align: center;" class="card-title"><i class="fas fa-plus-circle"></i></h1>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+{% endblock %}
