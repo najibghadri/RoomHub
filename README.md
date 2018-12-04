@@ -2,7 +2,6 @@
 ## Room reservation and organizing webapp
 
 Software specification/architecture/implementation documentation in Hungarian in the PDF.
-DR;
 ![](https://github.com/najibghadri/RoomHub/blob/master/image.png)
 
 ## Installation on Windows:
